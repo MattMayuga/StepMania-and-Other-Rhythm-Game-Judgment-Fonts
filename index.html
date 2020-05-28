@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html>
+<!-- Material --><!-- Required styles for Material Web -->
+<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+<!-- Render textfield component 
+<label class="mdc-text-field">
+  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+  <span class="mdc-floating-label" id="my-label">Label</span>
+  <div class="mdc-line-ripple"></div>
+</label>
+
+<!-- Required Material Web JavaScript library -->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- Instantiate single textfield component rendered in the document -->
+<script>
+  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+</script>
+<head>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 <body>
 
 <body style="background-color:gray;">
@@ -10,9 +33,18 @@
 <h2 style="color:red;">NOTE: THIS IS A WORK IN PROGRESS. NOT EVERYTHING IN THIS PAGE WORKS.</h2>
 
 
-<button onclick="document.location = 'default.asp'">MattMayuga's Original Judgments</button>
-<button onclick="document.location = 'default.asp'">Judgment Recreations</button>
-<button onclick="document.location = 'default.asp'">Judgment Recreations</button>
+<button onclick="document.location = 'default.asp'" class="mdc-button--raised">
+   <div class="mdc-button__ripple"></div>
+   <span class="mdc-button__label">MattMayuga's Original Judgments</span>
+</button>
+<button onclick="document.location = 'default.asp'" class="mdc-button--raised">
+   <div class="mdc-button__ripple"></div>
+   <span class="mdc-button__label">Judgment Recreations</span>
+</button>
+<button onclick="document.location = 'default.asp'" class="mdc-button--raised">
+   <div class="mdc-button__ripple"></div>
+   <span class="mdc-button__label">Judgments Made by Others</span>
+</button>
 
 <br>
 <br>
